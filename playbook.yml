@@ -3,6 +3,6 @@
    become: true 
    tasks:
     - name: Install NTP 
-      apt: pkg=ntpd state=installed update_cache=true
+      apt: pkg=ntp state=present update_cache=true
     - name: Stop ntp Service 
-      service: name=ntpd state=stopped
+      service: name=ntp state=stopped
